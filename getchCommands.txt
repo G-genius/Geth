@@ -1,0 +1,11 @@
+1)cd C:\Users\gamel\Desktop\geth
+2)geth account new --datadir ./
+3)geth --datadir ./ init genesis.json
+4)geth --datadir ./ --networkid 15 --rpc --rpccorsdomain "*" --allow-insecure-unlock --rpcapi "eth,web3,net,personal" --rpcport 8545
+geth --datadir ./ --networkid 15 --http --http.corsdomain "*" --allow-insecure-unlock --http.api "eth,web3,net,personal" --http.port 8545
+1)geth attach \\.\pipe\geth.ipc
+2)eth.accounts
+3)eth.getBalance("0x5b678f783bb91f25d16cc352cd31dd891b26164d")
+4)personal.unlockAccount("0x5b678f783bb91f25d16cc352cd31dd891b26164d")
+personal.unlockAccount("0x46270815a72af77ffa0694cc99c54d0ed1093265","123",0)
+5)miner.start() miner.stop()
